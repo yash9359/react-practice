@@ -1,0 +1,84 @@
+Tumhara doubt 👇
+
+“Function call to nahi kar sakte, fir ye kyu kaam karta hai?”
+
+onClick={() => changeColor("red")}
+
+Sabse pehle GOLDEN RULE 🧠
+
+🔴 onClick ko function chahiye
+❌ function ka result nahi
+
+❌ Ye galat hai (kyu?)
+onClick={changeColor("red")}
+
+
+Isme kya ho raha hai?
+
+React render hote hi
+
+changeColor("red") turant chal jaata hai
+
+Button click ka wait hi nahi karta
+
+Isliye ye ❌
+
+✅ Ye sahi hai (kyu?)
+onClick={() => changeColor("red")}
+
+
+Isme kya ho raha hai?
+
+Tum React ko bol rahe ho:
+
+“Bhai, click hoga tab ye function chala dena”
+
+() tabhi chalega jab click ho
+
+Simple comparison 🧠
+Socho aise:
+❌ Tum bolte ho:
+orderPizza()
+
+
+👉 Pizza abhi aa gaya 🍕
+
+✅ Tum bolte ho:
+() => orderPizza()
+
+
+👉 Jab bolega tab pizza aayega 📞🍕
+
+Visual difference table 👇
+Code	Kab chalta
+changeColor("red")	Render time
+() => changeColor("red")	Click time
+Short mental model (yaad rakh)
+
+() = abhi chalao
+() => = baad me chalao
+
+BONUS: Shortcut trick 😎
+
+Agar function ko parameter nahi chahiye:
+
+onClick={resetColor}
+
+
+Agar parameter chahiye:
+
+onClick={() => resetColor("olive")}
+
+Analogy 😄
+
+Socho:
+
+tum alarm set kar rahe ho ⏰
+
+tum bolte ho:
+
+❌ “abhi baj ja”
+
+✅ “subah 6 baje bajna”
+
+Arrow function = alarm set karna
